@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(0, 0, 0);
+   
+}
+#wrapper{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    background-color: rgb(48, 48, 175);
+    color: rgb(242, 250, 255);
+}
+p{
+    color: rgb(222, 222, 99);
+}
+#guess{
+    color: rgb(255, 80, 5);
+    font-weight: 100;
+    font-size: 30px;
+}
+#guessField{
+    background-color: rgb(194, 255, 218);
+    width: 150px;
+    height: 45px;
+    color: blue;
+    font-size: 40px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sahil with code</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wed</div>
+        <div class="day">thus</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+
+    // console.log(parent.children[1].innerHTML);
+  
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+         
+    // }
+    parent.children[1].style.color="green"
+    // console.log(parent.firstElementChild) //  for pwint first element child
+    // console.log(parent.lastElementChild)   // for print last element child
+
+    const day1=document.querySelector('.day')    //select child
+    // console.log(day1)
+
+    // console.log(day1.parentElement)  // for track parent 
+
+    // console.log(day1.nextElementSibling)   // for next element
+
+
+
+    console.log("nodes:",parent.childNodes)       //answer 9
+</script>
+</html>

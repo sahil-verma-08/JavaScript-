@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sahil with code</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    
+</body>
+<script>
+   const div= document.createElement('div')
+   console.log(div);
+   div.className = "main"
+   div.id="myid"
+   div.setAttribute("title","generated title")
+   div.style.backgroundColor="green"
+   div.style.padding ="12px"
+   for (let i=0;i<5;i++){
+    const h1=document.createElement("h1")
+    const addtext=document.createTextNode("sahil verma")
+    h1.appendChild(addtext)
+    div.appendChild(h1)
+   }
+  
+   document.body.appendChild(div)
+</script>
+</html>
