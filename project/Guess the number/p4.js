@@ -4,9 +4,8 @@ const userInput=document.querySelector('#guessField  ')
 const guessSlot=document.querySelector('.guesses')
 const remaining=document.querySelector('.lastresult')
 const lowOrHi=document.querySelector('.lowOrHi')
-const  startOver=document.querySelector('.rsultParas')
+const  startOver=document.querySelector('.resultParas')
 const p= document.createElement("p")
-
 
 let prevGuess=[]
 let numGuess=1
@@ -77,7 +76,7 @@ function endGame() {
     p.classList.add('button');
     p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
     startOver.appendChild(p);
-    playGame = false;
+    playgame= false;
     newGame();
   }
   
