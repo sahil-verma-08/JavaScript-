@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    background-color: bisque;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Mulish", serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: rgb(148, 126, 126);
+}
+.brand img{
+    width: 69px;
+    border-radius: 50%;
+}
+.brand{
+    display: flex;
+    align-items: center;
+   
+}
