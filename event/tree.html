@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sahil</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+
+</body>
+>
+
+<script>
+    let intervalId; // Variable to store the interval ID
+
+    const sayDate = function(str) {
+        console.log(str, Date.now());
+    };
+
+    document.querySelector('#start').addEventListener('click', function() {
+        if (!intervalId) { // Prevent multiple intervals from being created
+            intervalId = setInterval(sayDate, 1000, 'hii');
+        }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function() {
+        if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null; // Reset the interval ID
+            console.log('Interval stopped');
+        }
+    });
+</script>
+
+
+</script>
+</html>

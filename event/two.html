@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sahil web</title>
+</head>
+<body>
+    <h2>sahil</h2>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+                                             //settimeout()
+        // (1)                
+  setTimeout(function(){
+    console.log('papa')
+  },2000)
+
+//   (2)
+
+const hello=function(){
+    console.log("hello")
+}
+setTimeout(hello,2000)
+        // (3)
+const changeText=function(){
+    document.querySelector('h2').innerHTML="mard jaat"
+}
+// setTimeout(changeText,5000)
+
+                                                  //clearTimeout
+const changeme=setTimeout(changeText,5000)
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme)
+    console.log('succes')
+})
+</script>
+</html>
