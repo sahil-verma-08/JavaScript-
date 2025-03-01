@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice</title>
 </head>
+<style>
+    img{
+        height: 300px;
+       
+    }
+</style>
 <body>
+    <button id="find">find</button>
  <div id="detail">
 
  </div>
+ 
     
 </body>
 <script>
+    document.querySelector('#find').addEventListener('click',function(){
     const requestUrl='https://api.github.com/users/sahil-verma-08'
     const xhr= new XMLHttpRequest()
     xhr.open("GET",requestUrl)
-    xhr.onreadystatechange=function(){
+ 
+    xhr.onreadystatechange= function(){
         console.log(xhr.readyState);
         if (xhr.readyState===4){
             const data= JSON.parse(this.responseText)
             img=data.avatar_url
             document.getElementById('detail').innerHTML=`
             <img src="${img} "><img>
+            <p> follower=${data.followers}</p>
+            <p>Name=${data.login}</p>
 
             `
             
         }
     }
+
     xhr.send()
+});
 </script>
 </html>
