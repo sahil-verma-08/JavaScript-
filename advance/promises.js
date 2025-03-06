@@ -1,14 +1,14 @@
 //                                                             //creat promises
 
-//  const promiseOne= new Promise(function(resolve,reject){
-//     // do an async task
-//     // DB calls , cryptography ,network
-//   setTimeout(function(){
-//             //  console.log('async task is compelete');
-//              resolve()
-//   },1000)
+ const promiseOne= new Promise(function(resolve,reject){
+    // do an async task
+    // DB calls , cryptography ,network
+  setTimeout(function(){
+             console.log('async task is compelete');
+             resolve()
+  },1000)
 
-//   })
+  })
 //                                                              //prmise comsumed
 // promiseOne.then(function(){
 //     // console.log("promise consumed")
