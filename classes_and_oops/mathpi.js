@@ -35,6 +35,7 @@ console.log(check);
 sahil.name= "hello"  // no change by change property]
 
 console.log(sahil.name)   
+console.log("")
 
 
 
